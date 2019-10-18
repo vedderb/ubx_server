@@ -34,8 +34,8 @@ In this example, the ublox receiver is configured to output RTCM samples at 1 Hz
 **Example: Rover**
 
 ```bash
-./ubx_server --ublox /dev/ttyACM0 --isrover --ratems 1000 --roverrtcmserver 127.0.0.1 --roverrtcmport 65100 --rovernmeaserver 65101
+./ubx_server --ublox /dev/ttyACM0 --isrover --ratems 200 --roverrtcmserver 127.0.0.1 --roverrtcmport 65100 --rovernmeaserver 65101
 ```
 
-This rover will connect to the base station above, assuming it runs in the same computer (127.0.0.1). It will start a TCP server on port 65101 that outputs NMEA data.
+This rover will connect to the base station above, assuming it runs in the same computer (127.0.0.1). It will start a TCP server on port 65101 that outputs NMEA data at 5 Hz (200 ms).
 
