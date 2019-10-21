@@ -1,6 +1,6 @@
 # Ubx Server
 
-This is a CLI client to communicate with Ublox GNSS receivers such as the M8T, M8T and F9P. It can act as a base station that outputs RTCM data over TCP, or as a rover that outputs NMEA data over TCP. In base station mode it can configure the ublox receiver to generate the RTCM messages, alternatively configure the ublox to output raw data which is encoded to RTCM3.
+This is a CLI client to communicate with Ublox GNSS receivers such as the M8T, M8P and F9P. It can act as a base station that outputs RTCM data over TCP, or as a rover that outputs NMEA data over TCP. In base station mode it can configure the ublox receiver to generate the RTCM messages, alternatively configure the ublox to output raw data which is encoded to RTCM3.
 
 **Supported arguments**
 
