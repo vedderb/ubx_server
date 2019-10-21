@@ -82,9 +82,9 @@ bool BaseStation::startBase(QString ublox, int tcpPort, int rateMs, bool encodeR
         mUblox->ubxCfgRate(rateMs, 1, 0);
 
         // Raw data output
-        mUblox->ubxCfgMsg(UBX_CLASS_RXM, UBX_RXM_RAWX, encodeRaw ? 1 : 0); // Every second
-        mUblox->ubxCfgMsg(UBX_CLASS_RXM, UBX_RXM_SFRBX, encodeRaw ? 1 : 0); // Every second
-        mUblox->ubxCfgMsg(UBX_CLASS_NAV, UBX_NAV_SOL, encodeRaw ? 1 : 0); // Every second
+        mUblox->ubxCfgMsg(UBX_CLASS_RXM, UBX_RXM_RAWX, encodeRaw ? 1 : 0);
+        mUblox->ubxCfgMsg(UBX_CLASS_RXM, UBX_RXM_SFRBX, encodeRaw ? 1 : 0);
+        mUblox->ubxCfgMsg(UBX_CLASS_NAV, UBX_NAV_SOL, encodeRaw ? 1 : 0);
 
         // RTCM Message output
         mUblox->ubxCfgMsg(UBX_CLASS_RTCM3, UBX_RTCM3_1005, encodeRaw ? 0 : 1);
