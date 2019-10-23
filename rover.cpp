@@ -20,6 +20,7 @@
 #include <QDebug>
 #include <string>
 #include <locale>
+#include <cmath>
 
 Rover::Rover(QObject *parent) : QObject(parent)
 {
